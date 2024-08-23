@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Firenor Theme",
-    'summary': "A sleek, professional theme designed for FIRENOR",
+    'summary': "",
     'description': """
 The Firenor Theme brings a modern, clean, and professional design to Odoo 17, crafted specifically for businesses adhering to quality management standards. 
 With a custom color palette, including signature colors like #c4122f and #47a5ae, and thoughtfully structured SCSS variables, this theme ensures consistency and brand alignment across your Odoo environment.
@@ -27,6 +27,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
         # 'security/ir.model.access.csv',
         # 'views/views.xml',
         # 'views/templates.xml',
+        'data/theme_data.xml',
     ],
     'assets': {
         # 'web._assets_primary_variables': [
