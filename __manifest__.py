@@ -34,15 +34,15 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
         #     ('prepend', 'website_firenor/static/src/scss/primary_variables.scss'),
         # ],
         'web.assets_backend': [
-            'website_firenor/static/src/scss/primary_variables.scss',
+            # 'website_firenor/static/src/scss/primary_variables.scss',
             'website_firenor/static/src/scss/firenor_sytle.scss',
         ],
         'web.assets_frontend': [
-            'website_firenor/static/src/scss/primary_variables.scss',
+            # 'website_firenor/static/src/scss/primary_variables.scss',
             'website_firenor/static/src/scss/firenor_sytle.scss',
         ],
         'website.assets_editor': [
-            'website_firenor/static/src/scss/primary_variables.scss',
+            # 'website_firenor/static/src/scss/primary_variables.scss',
             'website_firenor/static/src/scss/firenor_sytle.scss',
         ],
     },
