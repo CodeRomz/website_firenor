@@ -17,6 +17,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
     # for the full list
     'category': 'Website/Theme',
     'version': '17.0.0.0.0',
+    'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
     'depends': ['theme_common'],
