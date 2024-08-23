@@ -21,11 +21,11 @@ $o-theme-font-configs: (
 $o-color-palettes: map-merge($o-color-palettes,
    (
       'firenor': (
-         'o-color-1':                    #333333,
-         'o-color-2':                    #47a5ae,
-         'o-color-3':                    #ffffff,
-         'o-color-4':                    #6e6e6e,  // Changed this to match your visual identity
-         'o-color-5':                    #47a5ae,
+         'o-color-1': #333333,
+         'o-color-2': #47a5ae,
+         'o-color-3': #ffffff,
+         'o-color-4': #6e6e6e,  // Changed this to match your visual identity
+         'o-color-5': #47a5ae,
       ),
    )
 );
@@ -45,37 +45,37 @@ $o-color-palettes: map-merge($o-color-palettes,
    (
       'firenor': (
          // Background Colors
-         'o-cc1-bg':                     'o-color-2', // #47a5ae
-         'o-cc2-bg':                     'o-color-3', // #ffffff
+         'o-cc1-bg':  'o-color-2', // #47a5ae
+         'o-cc2-bg':  'o-color-3', // #ffffff
 
          // Text Colors
-         'o-cc1-text':                   'o-color-3', // #ffffff
-         'o-cc2-text':                   'o-color-1', // #333333
+         'o-cc1-text': 'o-color-3', // #ffffff
+         'o-cc2-text': 'o-color-1', // #333333
 
          // Headings
-         'o-cc1-headings':               'o-color-1', // #333333
-         'o-cc2-headings':               'o-color-2', // #47a5ae
+         'o-cc1-headings': 'o-color-1', // #333333
+         'o-cc2-headings': 'o-color-2', // #47a5ae
 
          // Links
-         'o-cc1-link':                   'o-color-2', // #47a5ae
-         'o-cc2-link':                   'o-color-1', // #333333
+         'o-cc1-link': 'o-color-2', // #47a5ae
+         'o-cc2-link': 'o-color-1', // #333333
 
          // Buttons
-         'o-cc1-btn-primary':            'o-color-1', // #333333
-         'o-cc1-btn-primary-border':     'o-color-1', // #333333
-         'o-cc1-btn-primary-text':       'o-color-3', // #ffffff
+         'o-cc1-btn-primary': 'o-color-1', // #333333
+         'o-cc1-btn-primary-border': 'o-color-1', // #333333
+         'o-cc1-btn-primary-text': 'o-color-3', // #ffffff
 
-         'o-cc2-btn-secondary':          'o-color-2', // #47a5ae
-         'o-cc2-btn-secondary-border':   'o-color-2', // #47a5ae
-         'o-cc2-btn-secondary-text':     'o-color-3', // #ffffff
+         'o-cc2-btn-secondary': 'o-color-2', // #47a5ae
+         'o-cc2-btn-secondary-border': 'o-color-2', // #47a5ae
+         'o-cc2-btn-secondary-text': 'o-color-3', // #ffffff
 
          // Alerts and Badges
-         'o-cc1-alert-bg':               'o-color-2', // #47a5ae
-         'o-cc1-alert-text':             'o-color-1', // #333333
+         'o-cc1-alert-bg': 'o-color-2', // #47a5ae
+         'o-cc1-alert-text': 'o-color-1', // #333333
 
          // Borders
-         'o-cc1-border':                 'o-color-2', // #47a5ae
-         'o-cc2-border':                 'o-color-1', // #333333
+         'o-cc1-border': 'o-color-2', // #47a5ae
+         'o-cc2-border': 'o-color-1', // #333333
       ),
    )
 );
