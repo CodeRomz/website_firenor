@@ -15,7 +15,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Website/Theme',
+    'category': 'Theme/Firenor',
     'version': '17.0.0.0.0',
     'license': 'LGPL-3',
 
