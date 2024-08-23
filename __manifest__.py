@@ -29,17 +29,17 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
         # 'views/templates.xml',
     ],
     'assets': {
-        'web._assets_primary_variables': [
-            ('prepend', 'website_firenor/static/src/scss/primary_variables.scss'),
+        # 'web._assets_primary_variables': [
+        #     ('prepend', 'website_firenor/static/src/scss/primary_variables.scss'),
+        # ],
+        'web.assets_backend': [
+            'website_firenor/static/src/scss/primary_variables.scss',
         ],
-        # 'web.assets_backend': [
-        #     'website_firenor/static/src/scss/primary_variables.scss',
-        # ],
-        # 'web.assets_frontend': [
-        #     'website_firenor/static/src/scss/primary_variables.scss',
-        # ],
-        # 'website.assets_editor': [
-        #     'website_firenor/static/src/scss/primary_variables.scss',
-        # ],
+        'web.assets_frontend': [
+            'website_firenor/static/src/scss/primary_variables.scss',
+        ],
+        'website.assets_editor': [
+            'website_firenor/static/src/scss/primary_variables.scss',
+        ],
     },
 }
