@@ -1,34 +1,44 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "websiteFirenor",
-
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
-
+    'name': "Firenor Theme",
+    'summary': "A dynamic and visually captivating theme tailored for professional quality management systems.",
     'description': """
-Long description of module's purpose
-    """,
+The Firenor Theme brings a modern, clean, and professional design to Odoo 17, crafted specifically for businesses adhering to quality management standards. 
+With a custom color palette, including signature colors like #c4122f and #47a5ae, and thoughtfully structured SCSS variables, this theme ensures consistency and brand alignment across your Odoo environment.
+Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Theme is ideal for companies prioritizing both aesthetics and functionality in their Odoo interface.
+"""
+    ,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Romualdo Jr",
+    'website': "https://github.com/CodeRomz/website_firenor.git",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'Website/Theme',
+    'version': '17.0.0.0.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['website'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        # 'views/views.xml',
+        # 'views/templates.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    'assets': {
+        'web._assets_primary_variables': [
+            ('prepend', 'website_firenor/static/src/scss/primary_variables.scss'),
+        ],
+        # 'web.assets_backend': [
+        #     'website_firenor/static/src/scss/primary_variables.scss',
+        # ],
+        # 'web.assets_frontend': [
+        #     'website_firenor/static/src/scss/primary_variables.scss',
+        # ],
+        # 'website.assets_editor': [
+        #     'website_firenor/static/src/scss/primary_variables.scss',
+        # ],
+    },
 }
-

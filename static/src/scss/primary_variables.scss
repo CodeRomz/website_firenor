@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Square721BT';
+    src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Font Configuration
+$o-theme-font-configs: (
+   'Square721BT': (
+      'family': ('Square721BT'),
+      'properties': (
+         'base': (
+            'font-size-base': 1rem,
+         ),
+      ),
+   ),
+);
+
+// Consolidated Color Palette and Mappings
+$o-color-palettes: map-merge($o-color-palettes,
+   (
+      'firenor': (
+         'o-color-1':                    #333333,
+         'o-color-2':                    #47a5ae,
+         'o-color-3':                    #ffffff,
+         'o-color-4':                    #6e6e6e,  // Changed this to match your visual identity
+         'o-color-5':                    #47a5ae,
+      ),
+   )
+);
+
+// Selected Color Palettes Name
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'firenor');
+
+// Website Values Palette
+$o-website-values-palettes: (
+   'firenor': (
+      'color-palettes-name': 'firenor',
+   ),
+);
+
+// Map for Visual Elements
+$o-color-palettes: map-merge($o-color-palettes,
+   (
+      'firenor': (
+         // Background Colors
+         'o-cc1-bg':                     'o-color-2', // #47a5ae
+         'o-cc2-bg':                     'o-color-3', // #ffffff
+
+         // Text Colors
+         'o-cc1-text':                   'o-color-3', // #ffffff
+         'o-cc2-text':                   'o-color-1', // #333333
+
+         // Headings
+         'o-cc1-headings':               'o-color-1', // #333333
+         'o-cc2-headings':               'o-color-2', // #47a5ae
+
+         // Links
+         'o-cc1-link':                   'o-color-2', // #47a5ae
+         'o-cc2-link':                   'o-color-1', // #333333
+
+         // Buttons
+         'o-cc1-btn-primary':            'o-color-1', // #333333
+         'o-cc1-btn-primary-border':     'o-color-1', // #333333
+         'o-cc1-btn-primary-text':       'o-color-3', // #ffffff
+
+         'o-cc2-btn-secondary':          'o-color-2', // #47a5ae
+         'o-cc2-btn-secondary-border':   'o-color-2', // #47a5ae
+         'o-cc2-btn-secondary-text':     'o-color-3', // #ffffff
+
+         // Alerts and Badges
+         'o-cc1-alert-bg':               'o-color-2', // #47a5ae
+         'o-cc1-alert-text':             'o-color-1', // #333333
+
+         // Borders
+         'o-cc1-border':                 'o-color-2', // #47a5ae
+         'o-cc2-border':                 'o-color-1', // #333333
+      ),
+   )
+);
