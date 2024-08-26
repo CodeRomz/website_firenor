@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Square721BT';
-    src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
+    src: url('/itsm/static/src/fonts/square_721_bt.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,6 +25,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
   background: var(--NavBar-entry-backgroundColor, #47a5ae);
 }
 
+
 .btn-primary {
   color: #FFFFFF !important;
   background-color: #333333 !important;
@@ -41,7 +42,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     background-color: #333333 !important;
 }
 
-.btn-outline-secondary:hover {
+.btn .btn-outline-secondary:hover {
     color: #FFFFFF !important;
     background-color: #47a5ae !important;
 }
@@ -125,4 +126,4 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     opacity: 1 !important;
     background: linear-gradient(to right, #c4122f 18%, #47a5ae 18%) !important;
     height: 3px !important;
-}
+}}
