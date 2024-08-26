@@ -13,15 +13,3 @@ class SlideChannel(models.Model):
             ),
         })
         return res
-
-    # Override default_get method to set default values
-    # @api.model
-    # def default_get(self, fields_list):
-    #     res = super(SlideChannel, self).default_get(fields_list)
-    #     # Use _default_cover_properties to set default cover values
-    #     cover_defaults = self._default_cover_properties()
-    #     res.update(cover_defaults)  # Update the defaults
-    #     return res
-
-
-# i notice the defalut is this (res = super()._default_cover_properties()) and you change it to this (res = super(SlideChannel, self)._default_cover_properties() ) can you explain?
