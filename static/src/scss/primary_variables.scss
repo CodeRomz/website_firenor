@@ -1,4 +1,11 @@
+//------------------------------------------------------------------------------
+// Primary Variables for 'website_firenor' Theme
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
 // Font Configuration
+//------------------------------------------------------------------------------
+
 @font-face {
     font-family: 'Square721BT';
     src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
@@ -6,76 +13,126 @@
     font-style: normal;
 }
 
-// Assign the theme font to the global font variable
-// $o-theme-font: 'Square721BT' !default;
-
-// Consolidated Color Palette and Mappings
-// $o-color-palettes: map-merge($o-color-palettes, (
-//     'firenor': (
-//         'o-color-1': #333333,
-//         'o-color-2': #47a5ae,
-//         'o-color-3': #ffffff,
-//         'o-color-4': #ffffff,
-//         'o-color-5': #47a5ae,
-//     ),
-// ));
+// Set theme font as global default
+$o-theme-font: 'Square721BT', sans-serif !default;
 
 
-$o-theme-color-palettes: map-merge($o-theme-color-palettes,
-    (
-        'firenor-1': (
-            'o-color-1': #333333,
-            'o-color-2': #47a5ae,
-            'o-color-3': #ffffff,
-            'o-color-4': #ffffff,
-            'o-color-5': #47a5ae,
-        ),
-        'firenor-2': (
-            'o-color-1': #333333,
-            'o-color-2': #47a5ae,
-            'o-color-3': #ffffff,
-            'o-color-4': #ffffff,
-            'o-color-5': #47a5ae,
+//------------------------------------------------------------------------------
+// Color Palette
+//------------------------------------------------------------------------------
 
-        ),
-        'firenor-3': (
-            'o-color-1': #333333,
-            'o-color-2': #47a5ae,
-            'o-color-3': #ffffff,
-            'o-color-4': #ffffff,
-            'o-color-5': #47a5ae,
-
-        ),
-        'firenor-4': (
-            'o-color-1': #333333,
-            'o-color-2': #47a5ae,
-            'o-color-3': #ffffff,
-            'o-color-4': #ffffff,
-            'o-color-5': #47a5ae,
-
-        ),
+// Define custom color palette for 'website_firenor'
+$o-color-palettes: map-merge($o-color-palettes, (
+    'firenor': (
+        'o-color-1': #333333,  // Dark Gray (Primary Text Color)
+        'o-color-2': #47a5ae,  // Teal (Primary Brand Color)
+        'o-color-3': #ffffff,  // White (Background or Secondary Text)
+        'o-color-4': #ffffff,  // White (For Buttons, etc.)
+        'o-color-5': #47a5ae,  // Teal (Accent Color)
     )
-);
+));
+
+// Assign color variables for the theme
+$o-color-1: map-get($o-color-palettes, 'firenor')['o-color-1'] !default;
+$o-color-2: map-get($o-color-palettes, 'firenor')['o-color-2'] !default;
+$o-color-3: map-get($o-color-palettes, 'firenor')['o-color-3'] !default;
+$o-color-4: map-get($o-color-palettes, 'firenor')['o-color-4'] !default;
+$o-color-5: map-get($o-color-palettes, 'firenor')['o-color-5'] !default;
 
 
-$o-website-values-palettes: (
-    (
-        'color-palettes-name':              'firenor-1',
+//------------------------------------------------------------------------------
+// Primary and Secondary Brand Colors
+//------------------------------------------------------------------------------
 
-        // Header
-        'header-template':                  'default',
+// Assign primary and secondary brand colors
+$o-brand-primary: $o-color-2 !default;  // Teal for buttons, links, primary branding
+$o-brand-secondary: $o-color-1 !default;  // Dark Gray for secondary elements like text
 
-        //
-        'layout':                           'full',
 
-        // Font
-        'font':                             'Square721BT',
+//------------------------------------------------------------------------------
+// Button Colors
+//------------------------------------------------------------------------------
 
-        // Footer
-        'footer-template':                  'default',
+// Set button background colors using the brand colors
+$o-btn-primary-bg: $o-brand-primary !default;
+$o-btn-secondary-bg: $o-brand-secondary !default;
+
+
+//------------------------------------------------------------------------------
+// Preset Colors for Theme Editor
+//------------------------------------------------------------------------------
+
+// Define presets for the theme editor that Odoo uses in its website editor
+$o-color-palettes: map-merge($o-color-palettes, (
+    'firenor': (
+        'preset-1': (
+            'background': $o-color-1,
+            'foreground': $o-color-3,
+        ),
+        'preset-2': (
+            'background': $o-color-2,
+            'foreground': $o-color-4,
+        ),
+        'preset-3': (
+            'background': $o-color-5,
+            'foreground': $o-color-3,
+        ),
     ),
-);
+));
 
-$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'firenor-1');
 
+//------------------------------------------------------------------------------
+// Text Colors
+//------------------------------------------------------------------------------
+
+// Default text color configuration
+$o-body-text-color: $o-color-1 !default;  // Dark Gray text
+$o-body-background-color: $o-color-3 !default;  // White background
+
+
+//------------------------------------------------------------------------------
+// Layout and Components Configuration
+//------------------------------------------------------------------------------
+
+// Assign default link colors
+$o-link-color: $o-brand-primary !default;  // Teal links by default
+$o-link-hover-color: darken($o-brand-primary, 10%) !default;  // Darken the teal on hover
+
+
+//------------------------------------------------------------------------------
+// Miscellaneous
+//------------------------------------------------------------------------------
+
+// Set default border and divider colors
+$o-divider-color: lighten($o-color-1, 30%) !default;  // Lighter Gray for dividers
+$o-border-color: $o-color-1 !default;  // Dark Gray for borders
+
+
+//------------------------------------------------------------------------------
+// Footer and Header Color Setup (Optional)
+//------------------------------------------------------------------------------
+
+// Header background color
+$o-header-background-color: $o-color-2 !default;  // Teal header
+
+// Footer background and text color
+$o-footer-background-color: $o-color-1 !default;  // Dark Gray footer background
+$o-footer-text-color: $o-color-3 !default;  // White footer text
+
+
+//------------------------------------------------------------------------------
+// Form Configuration
+//------------------------------------------------------------------------------
+
+// Input and form element colors
+$o-form-input-bg-color: $o-color-3 !default;  // White background for inputs
+$o-form-input-border-color: $o-border-color !default;  // Dark Gray border for inputs
+$o-form-input-text-color: $o-body-text-color !default;  // Text color inside input fields
+
+
+//------------------------------------------------------------------------------
+// Odoo Default Color Overrides (Optional)
+//------------------------------------------------------------------------------
+
+// Override some Odoo default colors if needed to match the custom theme
 
