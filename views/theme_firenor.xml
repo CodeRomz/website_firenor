@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Define color palette -->
+        <record id="theme_firenor_palette" model="ir.ui.view">
+            <field name="name">firenor.color.preset</field>
+            <field name="type">qweb</field>
+            <field name="inherit_id" ref="website.assets_frontend"/>
+            <field name="arch" type="xml">
+                <xpath expr="." position="inside">
+                    <t t-set="o_color_palettes" t-value="dict(
+                        firenor = {
+                            'preset-1': {'background': '#333333', 'foreground': '#ffffff'},
+                            'preset-2': {'background': '#47a5ae', 'foreground': '#ffffff'},
+                            'preset-3': {'background': '#47a5ae', 'foreground': '#ffffff'},
+                        },
+                    )"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

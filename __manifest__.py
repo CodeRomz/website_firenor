@@ -27,7 +27,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
         # 'security/ir.models.access.csv',
         # 'views/views.xml',
         # 'views/templates.xml',
-        # 'data/theme_data.xml',
+        'views/theme_firenor.xml',
     ],
     'assets': {
         # 'web._assets_primary_variables': [
