@@ -16,7 +16,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Theme/Firenor',
-    'version': '17.0.0.0.0',
+    'version': '17.0.1.0.0',
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
@@ -36,6 +36,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
         'web.assets_backend': [
             # 'website_firenor/static/src/scss/primary_variables.scss',
             'website_firenor/static/src/scss/firenor_style.scss',
+
         ],
         'web.assets_frontend': [
             # 'website_firenor/static/src/scss/primary_variables.scss',
