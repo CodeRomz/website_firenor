@@ -5,7 +5,7 @@ class SlideChannel(models.Model):
 
     def _default_cover_properties(self):
         """Override the default cover properties to change the background image gradient."""
-        res = super(SlideChannel, self)._default_cover_properties()  # Correct class name here
+        res = super()._default_cover_properties()  # Correct class name here
         # Update the background image with the new gradient
         res.update({
             "background_color_class": "o_cc3",
@@ -19,10 +19,13 @@ class SlideChannel(models.Model):
         return res
 
     # Override default_get method to set default values
-    @api.model
-    def default_get(self, fields_list):
-        res = super(SlideChannel, self).default_get(fields_list)
-        # Use _default_cover_properties to set default cover values
-        cover_defaults = self._default_cover_properties()
-        res.update(cover_defaults)  # Update the defaults
-        return res
+    # @api.model
+    # def default_get(self, fields_list):
+    #     res = super(SlideChannel, self).default_get(fields_list)
+    #     # Use _default_cover_properties to set default cover values
+    #     cover_defaults = self._default_cover_properties()
+    #     res.update(cover_defaults)  # Update the defaults
+    #     return res
+
+
+# i notice the defalut is this (res = super()._default_cover_properties()) and you change it to this (res = super(SlideChannel, self)._default_cover_properties() ) can you explain?
