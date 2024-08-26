@@ -9,7 +9,7 @@ class FN_Channel(models.Model):
         # Update the background image with the new gradient
         res.update({
             'background_image': (
-                'background-image: linear-gradient(120deg, #47a5ae, #47a5ae);'
+                'background-image: linear-gradient(120deg, #47a5ae, #47a5ae) !important;'
             ),
         })
         return res
