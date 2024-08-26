@@ -20,7 +20,7 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['website'],
+    'depends': ['website', 'website_slides'],
 
     # always loaded
     'data': [
