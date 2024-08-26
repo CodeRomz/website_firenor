@@ -5,7 +5,6 @@
 //------------------------------------------------------------------------------
 // Font Configuration
 //------------------------------------------------------------------------------
-
 @font-face {
     font-family: 'Square721BT';
     src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
@@ -13,15 +12,22 @@
     font-style: normal;
 }
 
-// Set theme font as global default
-$o-theme-font: 'Square721BT', sans-serif !default;
+// Set up the theme font configuration
+$o-theme-font-configs: map-merge($o-theme-font-configs, (
+    'Square721BT': (
+        'family': 'Square721BT',
+        'fallback': 'Roboto, sans-serif',
+    )
+));
 
+// Include Roboto for fallback
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 //------------------------------------------------------------------------------
 // Color Palette
 //------------------------------------------------------------------------------
 
-// Define custom color palette for 'website_firenor'
+// Define the custom color palette for the 'website_firenor' theme
 $o-color-palettes: map-merge($o-color-palettes, (
     'firenor': (
         'o-color-1': #333333,  // Dark Gray (Primary Text Color)
@@ -32,69 +38,30 @@ $o-color-palettes: map-merge($o-color-palettes, (
     )
 ));
 
-// Assign color variables for the theme
+// Assign the colors to variables for easy reference throughout the theme
 $o-color-1: map-get($o-color-palettes, 'firenor')['o-color-1'] !default;
 $o-color-2: map-get($o-color-palettes, 'firenor')['o-color-2'] !default;
 $o-color-3: map-get($o-color-palettes, 'firenor')['o-color-3'] !default;
 $o-color-4: map-get($o-color-palettes, 'firenor')['o-color-4'] !default;
 $o-color-5: map-get($o-color-palettes, 'firenor')['o-color-5'] !default;
 
-
 //------------------------------------------------------------------------------
 // Primary and Secondary Brand Colors
 //------------------------------------------------------------------------------
-
-// Assign primary and secondary brand colors
-$o-brand-primary: $o-color-2 !default;  // Teal for buttons, links, primary branding
-$o-brand-secondary: $o-color-1 !default;  // Dark Gray for secondary elements like text
-
+$o-brand-primary: $o-color-2 !default;  // Teal for primary brand elements
+$o-brand-secondary: $o-color-1 !default;  // Dark Gray for secondary elements
 
 //------------------------------------------------------------------------------
-// Button Colors
+// Buttons and Links
 //------------------------------------------------------------------------------
+$o-btn-primary-bg: $o-brand-primary !default;  // Primary Button Background (Teal)
+$o-btn-secondary-bg: $o-brand-secondary !default;  // Secondary Button Background (Dark Gray)
 
-// Set button background colors using the brand colors
-$o-btn-primary-bg: $o-brand-primary !default;
-$o-btn-secondary-bg: $o-brand-secondary !default;
-
-
-//------------------------------------------------------------------------------
-// Preset Colors for Theme Editor
-//------------------------------------------------------------------------------
-
-// Define presets for the theme editor that Odoo uses in its website editor
-$o-color-palettes: map-merge($o-color-palettes, (
-    'firenor': (
-        'preset-1': (
-            'background': $o-color-1,
-            'foreground': $o-color-3,
-        ),
-        'preset-2': (
-            'background': $o-color-2,
-            'foreground': $o-color-4,
-        ),
-        'preset-3': (
-            'background': $o-color-5,
-            'foreground': $o-color-3,
-        ),
-    ),
-));
-
+$o-link-color: $o-brand-primary !default;  // Link color (Teal)
+$o-link-hover-color: darken($o-brand-primary, 10%) !default;  // Darken Teal for hover
 
 //------------------------------------------------------------------------------
-// Text Colors
+// Text and Background Colors
 //------------------------------------------------------------------------------
-
-// Default text color configuration
-$o-body-text-color: $o-color-1 !default;  // Dark Gray text
-$o-body-background-color: $o-color-3 !default;  // White background
-
-
-//------------------------------------------------------------------------------
-// Layout and Components Configuration
-//------------------------------------------------------------------------------
-
-// Assign default link colors
-$o-link-color: $o-brand-primary !default;  // Teal links by default
-$o-link-hover-color: darken($o-brand-primary, 10%) !default;  // Darken the teal on hover
-
+$o-body-text-color: $o-color-1 !default;  // Text color (Dark Gray)
+$o-body-background-color: $o-color-3 !default;  // Background color (White)
