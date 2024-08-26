@@ -7,7 +7,7 @@
 }
 
 // Assign the theme font to the global font variable
-$o-theme-font: 'Square721BT', sans-serif !default;
+$o-theme-font: 'Square721BT' !default;
 
 // Consolidated Color Palette and Mappings
 $o-color-palettes: map-merge($o-color-palettes, (
