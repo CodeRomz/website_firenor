@@ -9,7 +9,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     font-family: 'Square721BT', sans-serif !important;
 }
 
-
+// Navigation Bar
 .navbar #top_menu, .navbar .top_menu {
     flex-wrap: nowrap;
     margin-left: auto !important;
@@ -21,7 +21,12 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     background: #47a5ae !important;
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: #333333 !important;
+    }
+
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+    color: #47a5ae;
     border-bottom: 3px solid #47a5ae !important;
  }
 
@@ -51,13 +56,18 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     background-color: #47a5ae !important;
 }
 
+
+.btn-secondary{
+    color: white !important;
+    }
+
 .bg-action, .text-bg-action {
   --background-color: RGBA(51, 51, 51, var(--bg-opacity, 1)) !important;
   background-color: var(--background-color) !important;
 }
 
 .text-primary {
-  --color: RGBA(51, 15, 15, var(--text-opacity, 1)) !important;
+  --color: RGBA(51, 51, 51, var(--text-opacity, 1)) !important;
   color: var(--color) !important;
 }
 
@@ -82,7 +92,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
 
 
 .o-mail-Chatter-top:has(.o-mail-Chatter-sendMessage.active) .o-mail-Composer {
-  background-color:  #47a5ae85 !important;
+  background-color:  #47a5ae !important;
 }
 
 .badge.text-bg-default, .badge.bg-light, .badge.text-bg-light, .badge.bg-default, .badge.text-primary{
@@ -117,10 +127,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     color: #317178 !important;
     }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
-    color: #47a5ae;
-    border-bottom: 1px solid #47a5ae;
-}
+
 
 .s_hr hr {
     padding: 0 !important;
