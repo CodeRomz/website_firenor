@@ -5,7 +5,7 @@ class SlideChannel(models.Model):
 
     def _default_cover_properties(self):
         """Override the default cover properties to change the background image gradient."""
-        res = super()._default_cover_properties()  # Correct class name here
+        res = super()._default_cover_properties()
         # Update the background image with the new gradient
         res.update({
             'background_color_style': (

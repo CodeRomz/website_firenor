@@ -11,23 +11,13 @@ Built to seamlessly integrate with FIRENOR's documentation style, the Firenor Th
 
     'author': "Romualdo Jr",
     'website': "https://github.com/CodeRomz/website_firenor.git",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
     'category': 'Theme/Firenor',
     'version': '17.0.1.0.0',
     'license': 'LGPL-3',
-
-    # any module necessary for this one to work correctly
     'depends': ['website', 'website_slides'],
 
     # always loaded
     'data': [
-        # 'security/ir.models.access.csv',
-        # 'views/views.xml',
-        # 'views/templates.xml',
-        # 'views/theme_firenor.xml',
     ],
     'assets': {
         'web.assets_backend': [
