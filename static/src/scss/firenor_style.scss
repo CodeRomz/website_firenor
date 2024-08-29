@@ -181,6 +181,13 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     border-color: #dee2e6;
 }
 
+.o_field_statusbar > .o_statusbar_status > .o_arrow_button:not(.d-none), .o_field_statusbar_duration > .o_statusbar_status > .o_arrow_button:not(.d-none) {
+    position: relative;
+    padding-left: 1.5em;
+    border-radius: 0;
+    background-color: #dee2e6 !important;
+    color: #333333 !important;
+}
 
 .s_hr hr {
     padding: 0 !important;
