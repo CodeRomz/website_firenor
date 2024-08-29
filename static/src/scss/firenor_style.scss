@@ -66,6 +66,17 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     background-color: #333333 !important;
     }
 
+
+.btn.flat {
+    border: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 0;
+    color: white !important;
+}
+
 .o_action_manager .o_control_panel_main .btn:hover{
     background-color: lightgray !important;
     }
