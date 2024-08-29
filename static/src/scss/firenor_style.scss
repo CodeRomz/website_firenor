@@ -174,12 +174,12 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     color: #212529 !important;
 }
 
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
-    cursor: pointer;
-    color: #343a40;
-    background-color: #dee2e6;
-    border-color: #dee2e6;
-}
+// button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+//     cursor: pointer;
+//     color: #343a40;
+//     background-color: #dee2e6;
+//     border-color: #dee2e6;
+// }
 
 .o_field_statusbar > .o_statusbar_status > .o_arrow_button:not(.d-none), .o_field_statusbar_duration > .o_statusbar_status > .o_arrow_button:not(.d-none) {
     position: relative;
