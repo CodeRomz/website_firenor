@@ -8,6 +8,7 @@ class SlideChannel(models.Model):
         res = super()._default_cover_properties()
         # Update the background image with the new gradient
         res.update({
+            'header_text_color_style':'color: white !important;',
             'background_color_style': (
                 'background-image: linear-gradient(120deg, #47a5ae, #47a5ae) !important;'
             ),
