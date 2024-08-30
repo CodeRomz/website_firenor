@@ -87,3 +87,8 @@ header .o_main_navbar {
   --notebook-link-border-color-active: var(--border-color, #47a5ae ) !important;
   --notebook-link-border-color-active-accent: var(--border-color, #47a5ae ) !important;
 }
+
+    .o_wslides_course_pict {
+        border: 1px solid #68465f;
+        border-bottom-width: 0;
+    }
