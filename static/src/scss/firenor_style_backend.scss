@@ -151,3 +151,11 @@ header .o_main_navbar {
     --background-color: #47a5ae;
     background-color: var(--background-color) !important;
 }
+//
+
+
+//
+.o-form-buttonbox .oe_stat_button .o_button_icon {
+    color: var(--o-stat-button-color, #47a5ae);
+}
+//
