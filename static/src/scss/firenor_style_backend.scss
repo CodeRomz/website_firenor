@@ -93,6 +93,11 @@ header .o_main_navbar {
   --notebook-link-border-color-active: var(--border-color, #47a5ae ) !important;
   --notebook-link-border-color-active-accent: var(--border-color, #47a5ae ) !important;
 }
+
+.o_notebook .nav-link {
+    border-color: var(--notebook-link-border-color, transparent);
+    color: #47a5ae;
+}
 //
 
 
@@ -103,4 +108,11 @@ header .o_main_navbar {
     border-color: #47a5ae;
 }
 //
+
+
+
+//
+.o_frontend_to_backend_nav .o_frontend_to_backend_apps_btn {
+    background-color: #47a5ae;
+}
 
