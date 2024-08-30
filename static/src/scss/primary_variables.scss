@@ -1,10 +1,3 @@
-//------------------------------------------------------------------------------
-// Primary Variables for 'website_firenor' Theme
-//------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------
-// Font Configuration
-//------------------------------------------------------------------------------
 @font-face {
     font-family: 'Square721BT';
     src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
@@ -12,56 +5,22 @@
     font-style: normal;
 }
 
-// Set up the theme font configuration
-$o-theme-font-configs: map-merge($o-theme-font-configs, (
-    'Square721BT': (
-        'family': 'Square721BT',
-        'fallback': 'Roboto, sans-serif',
-    )
-));
+$o-theme-font-configs: (
+   'Square721BT': ( 'family': ('Square721BT', sans-serif)),
+);
 
-// Include Roboto for fallback
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+$o-color-palettes: map-merge($o-color-palettes,
+   (
+      'firenor-1': (
+         'o-color-1': #47a5ae,
+         'o-color-2': #47a5ae,
+         'o-color-3': #47a5ae,
+         'o-color-4': #47a5ae,
+         'o-color-5': #47a5ae,
+      ),
+   )
+);
 
-//------------------------------------------------------------------------------
-// Color Palette
-//------------------------------------------------------------------------------
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'firenor-1');
 
-// Define the custom color palette for the 'website_firenor' theme
-$o-color-palettes: map-merge($o-color-palettes, (
-    'firenor': (
-        'o-color-1': #333333,  // Dark Gray (Primary Text Color)
-        'o-color-2': #47a5ae,  // Teal (Primary Brand Color)
-        'o-color-3': #ffffff,  // White (Background or Secondary Text)
-        'o-color-4': #ffffff,  // White (For Buttons, etc.)
-        'o-color-5': #47a5ae,  // Teal (Accent Color)
-    )
-));
-
-// Assign the colors to variables for easy reference throughout the theme
-$o-color-1: map-get($o-color-palettes, 'firenor')['o-color-1'] !default;
-$o-color-2: map-get($o-color-palettes, 'firenor')['o-color-2'] !default;
-$o-color-3: map-get($o-color-palettes, 'firenor')['o-color-3'] !default;
-$o-color-4: map-get($o-color-palettes, 'firenor')['o-color-4'] !default;
-$o-color-5: map-get($o-color-palettes, 'firenor')['o-color-5'] !default;
-
-//------------------------------------------------------------------------------
-// Primary and Secondary Brand Colors
-//------------------------------------------------------------------------------
-$o-brand-primary: $o-color-2 !default;  // Teal for primary brand elements
-$o-brand-secondary: $o-color-1 !default;  // Dark Gray for secondary elements
-
-//------------------------------------------------------------------------------
-// Buttons and Links
-//------------------------------------------------------------------------------
-$o-btn-primary-bg: $o-brand-primary !default;  // Primary Button Background (Teal)
-$o-btn-secondary-bg: $o-brand-secondary !default;  // Secondary Button Background (Dark Gray)
-
-$o-link-color: $o-brand-primary !default;  // Link color (Teal)
-$o-link-hover-color: darken($o-brand-primary, 10%) !default;  // Darken Teal for hover
-
-//------------------------------------------------------------------------------
-// Text and Background Colors
-//------------------------------------------------------------------------------
-$o-body-text-color: $o-color-1 !default;  // Text color (Dark Gray)
-$o-body-background-color: $o-color-3 !default;  // Background color (White)
+$o-website-values-palettes: ( ( 'color-palettes-name': 'firenor-1', ), );
