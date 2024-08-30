@@ -10,6 +10,12 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
 }
 
 
+//
+.bg-primary {
+    --background-color: RGBA(71, 165, 174, var(--bg-opacity, 1));
+    background-color: #47a5ae !important;
+}
+
 
 //Navigation Bar
 header .o_main_navbar {
@@ -87,9 +93,14 @@ header .o_main_navbar {
   --notebook-link-border-color-active: var(--border-color, #47a5ae ) !important;
   --notebook-link-border-color-active-accent: var(--border-color, #47a5ae ) !important;
 }
+//
+
+
 
 //Settings Checkbox
 .form-check-input:checked {
     background-color: #47a5ae;
     border-color: #47a5ae;
 }
+//
+
