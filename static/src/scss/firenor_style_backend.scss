@@ -19,3 +19,10 @@ header .o_main_navbar {
   background: var(--NavBar-entry-backgroundColor, #47a5ae);
   border: 1px solid transparent;
 }
+
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #47a5ae !important;
+    border-color: #47a5ae !important;
+}
