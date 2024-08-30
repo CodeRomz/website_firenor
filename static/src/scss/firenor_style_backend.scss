@@ -50,3 +50,12 @@ header .o_main_navbar {
     background-color: #6e6e6e;
     border-color: #6e6e6e;
 }
+
+//Calendar Colour Scheme
+.o_calendar_renderer .o_calendar_widget .fc-timeGridDay-view .fc-day-header.fc-today, .o_calendar_renderer .o_calendar_widget .fc-timeGridWeek-view .fc-day-header.fc-today {
+  --o-cw-bg: #47a5ae !important;
+}
+
+.o_calendar_renderer .o_calendar_widget .fc-dayGridMonth-view .fc-content-skeleton .fc-day-top.fc-today {
+  --o-cw-bg: #47a5ae !important;
+}
