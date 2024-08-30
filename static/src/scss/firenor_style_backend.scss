@@ -142,3 +142,13 @@ header .o_main_navbar {
 .btn-link:hover {
     color: #333333;
 }
+//
+
+
+
+//
+}
+.bg-action, .text-bg-action {
+    --background-color: RGBA(71, 165, 174 var(--bg-opacity, 1));
+    background-color: var(--background-color) !important;
+}
