@@ -73,3 +73,8 @@ header .o_main_navbar {
     outline: 1px solid #47a5ae !important;
     color: #47a5ae !important;
 }
+
+.badge.text-bg-default, .badge.bg-light, .badge.text-bg-light, .badge.bg-default, .badge.text-primary:hover {
+    outline: 1px solid #47a5ae !important;
+    color: #333333 !important;
+}
