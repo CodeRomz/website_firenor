@@ -131,8 +131,14 @@ header .o_main_navbar {
 .btn-secondary.active {
     border-color: #47a5ae;
 }
+//
 
 
+
+//
 .btn-link {
     color: #47a5ae;
+}
+.btn-link:hover {
+    color: #333333;
 }
