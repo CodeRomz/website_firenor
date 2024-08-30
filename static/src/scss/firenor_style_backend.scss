@@ -158,12 +158,15 @@ header .o_main_navbar {
 .o-form-buttonbox .oe_stat_button .o_button_icon {
     color: var(--o-stat-button-color, #47a5ae);
 }
-//
+
 
 .o_field_percent_pie .o_pie {
     --PercentPieField-color-active: #47a5ae;
 }
+//
 
+
+//
 .text-primary {
     --color: #47a5ae;
     color: var(--color) !important;
