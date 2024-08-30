@@ -78,3 +78,12 @@ header .o_main_navbar {
     outline: 1px solid #47a5ae !important;
     color: #333333 !important;
 }
+
+
+
+//Notebook Tabs
+.o_notebook {
+  --notebook-link-border-color-hover: #47a5ae !important;
+  --notebook-link-border-color-active: var(--border-color, #47a5ae ) !important;
+  --notebook-link-border-color-active-accent: var(--border-color, #47a5ae ) !important;
+}
