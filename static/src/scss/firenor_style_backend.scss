@@ -163,3 +163,8 @@ header .o_main_navbar {
 .o_field_percent_pie .o_pie {
     --PercentPieField-color-active: #47a5ae;
 }
+
+.text-primary {
+    --color: #47a5ae;
+    color: var(--color) !important;
+}
