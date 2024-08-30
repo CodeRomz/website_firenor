@@ -9,7 +9,7 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     font-family: 'Square721BT', sans-serif !important;
 }
 
-
+//Navigation Bar
 header .o_main_navbar {
   background-color: #47a5ae;
   border-color: #47a5ae;
@@ -19,8 +19,9 @@ header .o_main_navbar {
   background: var(--NavBar-entry-backgroundColor, #47a5ae);
   border: 1px solid transparent;
 }
+//
 
-
+//Main Buttons
 .btn-primary {
     color: #FFFFFF;
     background-color: #47a5ae !important;
@@ -50,8 +51,10 @@ header .o_main_navbar {
     background-color: #6e6e6e;
     border-color: #6e6e6e;
 }
+//
 
-//Calendar Colour Scheme
+
+//Calendar
 .o_calendar_renderer .o_calendar_widget .fc-timeGridDay-view .fc-day-header.fc-today, .o_calendar_renderer .o_calendar_widget .fc-timeGridWeek-view .fc-day-header.fc-today {
   --o-cw-bg: #47a5ae !important;
 }
@@ -59,3 +62,4 @@ header .o_main_navbar {
 .o_calendar_renderer .o_calendar_widget .fc-dayGridMonth-view .fc-content-skeleton .fc-day-top.fc-today {
   --o-cw-bg: #47a5ae !important;
 }
+//
