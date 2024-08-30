@@ -87,3 +87,9 @@ header .o_main_navbar {
   --notebook-link-border-color-active: var(--border-color, #47a5ae ) !important;
   --notebook-link-border-color-active-accent: var(--border-color, #47a5ae ) !important;
 }
+
+//Settings Checkbox
+.form-check-input:checked {
+    background-color: #47a5ae;
+    border-color: #47a5ae;
+}
