@@ -19,15 +19,15 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
 
 .navbar .btn {
     white-space: nowrap;
-    color: #47a5ae;
-    border-color: #47a5ae;
+    color: #47a5ae !important;
+    border-color: #47a5ae!;
 }
 
 .navbar .btn:hover {
     white-space: nowrap;
-    color: white;
-    border-color: #333333;
-    background-color: #333333;
+    color: white !important;
+    border-color: #47a5ae;
+    background-color: #47a5ae !important;
 }
 
 
