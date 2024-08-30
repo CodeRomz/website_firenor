@@ -28,6 +28,17 @@ header .o_main_navbar {
 }
 
 
+.btn-outline-primary {
+    color: #47a5ae !important;
+    border-color: #47a5ae !important;
+}
+
+.btn-outline-primary:hover {
+    color: white !important;
+    border-color: #47a5ae !important;
+    background-color: #47a5ae !important;
+}
+
 .btn-info {
     color: white !important;
     background-color: #6e6e6e;
