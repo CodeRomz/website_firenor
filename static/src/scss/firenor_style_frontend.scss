@@ -9,14 +9,16 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     font-family: 'Square721BT', sans-serif !important;
 }
 
-// Navigation Bar Front End
+
+// NavigationBar Front End
 .navbar #top_menu, .navbar .top_menu {
     flex-wrap: nowrap;
     margin-left: auto !important;
     margin-right: 1% !important;
 }
 
-// .navbar .btn .btn-outline-secondary
+
+// Main Buttons
 .btn-outline-secondary{
     color: #47a5ae !important;
     border-color: #47a5ae !important;
@@ -29,7 +31,6 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     background-color: #47a5ae !important;
 }
 
-
 .navbar-light .btn-outline-secondary.dropdown-toggle.show{
     background-color: white !important;
     }
@@ -39,6 +40,8 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
     color: #47a5ae !important;
     }
 
+
+//Custom separator
 .s_hr hr {
     background: linear-gradient(to right, #c4122f 18%, #47a5ae 18%) !important;
     height: 3px !important;
