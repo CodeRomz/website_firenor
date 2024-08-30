@@ -6,21 +6,27 @@
 }
 
 $o-theme-font-configs: (
-   'Square721BT': ( 'family': ('Square721BT', sans-serif)),
+    'Square721BT': (
+        'family': ('Square721BT', sans-serif)
+    )
 );
 
 $o-color-palettes: map-merge($o-color-palettes,
-   (
-      'firenor-1': (
-         'o-color-1': #47a5ae,
-         'o-color-2': #47a5ae,
-         'o-color-3': #47a5ae,
-         'o-color-4': #47a5ae,
-         'o-color-5': #47a5ae,
-      ),
-   )
+    (
+        'firenor-1': (
+            'o-color-1': #47a5ae,
+            'o-color-2': #47a5ae,
+            'o-color-3': #47a5ae,
+            'o-color-4': #47a5ae,
+            'o-color-5': #47a5ae
+        )
+    )
 );
 
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'firenor-1');
 
-$o-website-values-palettes: ( ( 'color-palettes-name': 'firenor-1', ), );
+$o-website-values-palettes: (
+    (
+        'color-palettes-name': 'firenor-1'
+    )
+);
