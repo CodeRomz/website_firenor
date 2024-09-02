@@ -117,7 +117,7 @@ header .o_main_navbar {
 
 
 
-//
+// Switch Logo Icon frontend/backend
 .o_frontend_to_backend_nav .o_frontend_to_backend_apps_btn {
     background-color: #47a5ae;
 }
@@ -131,6 +131,9 @@ header .o_main_navbar {
     border-top: 20px solid #47a5ae;
     border-left: 20px solid #47a5ae;
 }
+//
+
+
 
 
 // Small Icon Tree, kanban, etc View
@@ -141,7 +144,7 @@ header .o_main_navbar {
 
 
 
-//
+// Button links
 .btn-link {
     color: #47a5ae;
 }
@@ -160,7 +163,7 @@ header .o_main_navbar {
 //
 
 
-//
+// Icons Top bar
 .o-form-buttonbox .oe_stat_button .o_button_icon {
     color: var(--o-stat-button-color, #47a5ae);
 }
@@ -173,7 +176,7 @@ header .o_main_navbar {
 
 
 
-//
+// Text Primary
 .text-primary {
     --color: #47a5ae;
     color: var(--color) !important;
