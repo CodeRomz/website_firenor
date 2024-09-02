@@ -1,3 +1,4 @@
+//
 @font-face {
     font-family: 'Square721BT';
     src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
@@ -12,12 +13,17 @@ body, p, h1, h2, h3, h4, h5, h6, .o_web_client, .o_website_theme, .o_website_the
 a{
     color: #333333;
     }
+//
+
+
 
 //
 .bg-primary {
     --background-color: RGBA(71, 165, 174, var(--bg-opacity, 1));
     background-color: #47a5ae !important;
 }
+//
+
 
 
 //Navigation Bar
