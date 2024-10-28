@@ -22,15 +22,11 @@ Built to seamlessly integrate with FIRENOR's documentation style.
     'assets': {
         'web.assets_backend': [
             'website_firenor/static/src/scss/firenor_style_backend.scss',
-            # 'website_firenor/static/src/scss/primary_variables.scss',
         ],
         'web.assets_frontend': [
             'website_firenor/static/src/scss/firenor_style_frontend.scss',
-            # 'website_firenor/static/src/scss/primary_variables.scss',
         ],
         'website.assets_editor': [
-            # 'website_firenor/static/src/scss/firenor_style_frontend.scss',
-            # 'website_firenor/static/src/scss/primary_variables.scss',
         ],
     },
 }
