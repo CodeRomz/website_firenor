@@ -17,7 +17,7 @@ $o-theme-font-configs: (
     )
 );
 
-// 3. Define Custom Color Palette
+// 3. Define Custom Color Palette using map-merge
 $o-color-palettes: map-merge($o-color-palettes, (
     'firenor-1': (
         'o-color-1': #333333,  // Primary color
