@@ -21,7 +21,7 @@ $o-theme-font-configs: (
 );
 
 // 4. Define Custom Color Palette with Fallback for `$o-color-palettes`
-$o-color-palettes: () !default; // Ensure `$o-color-palettes` is defined
+/* $o-color-palettes: () !default; // Ensure `$o-color-palettes` is defined */
 $o-color-palettes: map-merge($o-color-palettes, (
     'firenor-1': (
         'o-color-1': #333333,  // Primary color
