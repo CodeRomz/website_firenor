@@ -1,3 +1,4 @@
+// 1. Custom Font Definition
 @font-face {
     font-family: 'Square721BT';
     src: url('/website_firenor/static/src/fonts/square_721_bt.ttf') format('truetype');
@@ -5,22 +6,103 @@
     font-style: normal;
 }
 
+// 2. Font Configuration for Odoo Theme
 $o-theme-font-configs: (
     'Square721BT': (
-        'family': ('Square721BT', sans-serif)
+        'family': ('Square721BT', sans-serif),
+        'url': 'Square721BT:400',  // Optional URL part for web fonts if needed
+        'properties': (
+            'base': ('font-size-base': 1rem)  // Adjusts font size if necessary
+        )
     )
 );
 
+// 3. Define Custom Color Palette
 $o-color-palettes: map-merge($o-color-palettes, (
     'firenor-1': (
         'o-color-1': #333333,  // Primary color
         'o-color-2': #47a5ae,  // Secondary color
         'o-color-3': #ffffff,  // Accent color
         'o-color-4': #ffffff,  // Light text
-        'o-color-5': #333333,  // Dark text
+        'o-color-5': #333333   // Dark text
     )
 ));
 
+// 4. Register Palette as a Selectable Preset
 $o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'firenor-1');
 
+// 5. Set Default Color Preset for Website Builder
+$o-website-values-palettes: (
+    'color-palettes-name': 'firenor-1'
+);
 
+// 6. Define Color Combination Variables (o-cc*)
+$o-color-palettes: map-merge($o-color-palettes, (
+    'firenor-1': (
+        // Backgrounds
+        'o-cc1-bg': #f4f6f9,
+        'o-cc1-section-bg': #ffffff,
+        'o-cc1-card-bg': #f4f6f9,
+        'o-cc1-table-bg': #ffffff,
+
+        // Text Colors
+        'o-cc1-text': #333333,
+        'o-cc1-text-muted': #6c757d,
+        'o-cc1-heading': #1a73e8,
+        'o-cc1-h1': #1a73e8,
+        'o-cc1-h2': #333333,
+        'o-cc1-h3': #333333,
+        'o-cc1-h4': #333333,
+        'o-cc1-h5': #333333,
+        'o-cc1-h6': #333333,
+        'o-cc1-link': #47a5ae,
+        'o-cc1-link-hover': #1a73e8,
+
+        // Buttons
+        'o-cc1-btn-primary': #47a5ae,
+        'o-cc1-btn-primary-text': #ffffff,
+        'o-cc1-btn-primary-border': #47a5ae,
+        'o-cc1-btn-primary-hover': #1a73e8,
+        'o-cc1-btn-primary-hover-text': #ffffff,
+        'o-cc1-btn-secondary': #333333,
+        'o-cc1-btn-secondary-text': #ffffff,
+        'o-cc1-btn-secondary-border': #333333,
+        'o-cc1-btn-secondary-hover': #1a73e8,
+        'o-cc1-btn-secondary-hover-text': #ffffff,
+
+        // Borders
+        'o-cc1-border': #d1d1d1,
+        'o-cc1-border-light': #e3e4e6,
+        'o-cc1-border-dark': #333333,
+
+        // Icon and Badge Colors
+        'o-cc1-icon': #333333,
+        'o-cc1-badge': #47a5ae,
+        'o-cc1-badge-text': #ffffff,
+
+        // Form and Input Colors
+        'o-cc1-input-bg': #ffffff,
+        'o-cc1-input-text': #333333,
+        'o-cc1-input-border': #d1d1d1,
+        'o-cc1-input-focus': #1a73e8,
+
+        // Table Colors
+        'o-cc1-table-header-bg': #e3e4e6,
+        'o-cc1-table-header-text': #333333,
+        'o-cc1-table-row-hover-bg': #f4f6f9,
+
+        // Navigation Colors
+        'o-cc1-navbar-bg': #ffffff,
+        'o-cc1-navbar-text': #333333,
+        'o-cc1-navbar-link': #47a5ae,
+        'o-cc1-navbar-link-hover': #1a73e8,
+        'o-cc1-navbar-btn': #333333,
+        'o-cc1-navbar-btn-text': #ffffff,
+
+        // Footer Colors
+        'o-cc1-footer-bg': #333333,
+        'o-cc1-footer-text': #ffffff,
+        'o-cc1-footer-link': #47a5ae,
+        'o-cc1-footer-link-hover': #1a73e8
+    )
+));
