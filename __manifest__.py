@@ -23,10 +23,10 @@ Built to seamlessly integrate with FIRENOR's documentation style.
         'web._assets_primary_variables': [
             ('prepend', 'website_firenor/static/src/scss/primary_variables.scss'),
         ],
-        # 'web.assets_frontend': [
-        #     # 'website_firenor/static/src/scss/primary_variables.scss',
-        #     # 'website_firenor/static/src/scss/firenor_style_frontend.scss',
-        # ],
+        'web.assets_frontend': [
+            'website_firenor/static/src/scss/primary_variables.scss',
+            # 'website_firenor/static/src/scss/firenor_style_frontend.scss',
+        ],
         # 'web.assets_backend': [
         #     # 'website_firenor/static/src/scss/firenor_style_backend.scss',
         # ],
